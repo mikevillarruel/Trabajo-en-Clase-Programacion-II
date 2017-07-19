@@ -13,7 +13,11 @@ public class FileManager {
 	public static final String SEPARATOR=";";
 	public static final String QUOTE="\"";
 	private String texto="";
-	
+	/**
+	 * 
+	 * @param table = Contiene el nombre del archivo en el que se guardara la informacion
+	 * @param data = Contiene los datos que seran guardados en el archivo
+	 */
 	public void save(String table, String data){
 		
 		String nombreArchivo = table+".csv";
@@ -39,7 +43,11 @@ public class FileManager {
         
 		
 	}
-	
+	/**
+	 * 
+	 * @param id = Contiene el dato que se buscara
+	 * @param archivo = Contiene el nombre del archivo en el que se realizara la busqueda
+	 */
 	public void find(int id,String archivo){
 		
 		BufferedReader br = null;
